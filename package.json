@@ -1,0 +1,20 @@
+{
+  "name": "appcurious.github.io",
+  "version": "1.0.0",
+  "description": "about",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appCurious/appCurious.github.io.git"
+  },
+  "author": "gregclark2k11@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appCurious/appCurious.github.io/issues"
+  },
+  "homepage": "https://github.com/appCurious/appCurious.github.io#readme"
+}
