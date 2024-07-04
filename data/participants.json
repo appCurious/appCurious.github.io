@@ -1,0 +1,23 @@
+{
+  "participants": [
+    {
+      "name": "Greg Clark",
+      "jobTitle": "Senior Software Engineer",
+      "technologies": [
+        "Vanilla JS",
+        "Snabby - Snabdom Wrapper",
+        "HTML",
+        "Custom HTML Elements",
+        "ShadowDOM",
+        "CSS",
+        "Azure Devops",
+        "Git",
+        "VS Code"
+      ],
+      "interests": [
+
+      ],
+      "aboutMe": "I am interested in web technologies. I got started in this industry by asking the recursive questions, What is this? How can I use it? How can I use it anywhere on any device? Here I am today, still asking those quesions that drive my iterative growth cycles. I'm still curious about technology. I'm still learning, growing and failing forward."
+    }
+  ]
+}
