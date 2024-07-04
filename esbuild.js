@@ -21,10 +21,10 @@ fs.copyFile('index.html','build/index.html', (err) => {
     caughtE.push(`copy file index.html failed: ${err}`);
 });
 
-if (!fs.exists('build/data'))
+if (!fs.existsSync('build/data'))
   fs.mkdirSync('build/data');
 
-fs.copyFileSync('data/participants.json', 'build/data/participants.json', (err) => {
+fs.copyFile('data/participants.json', 'build/data/participants.json', (err) => {
   if (err)
     caughtE.push(`copy file participants.json failed: ${err}`);
 });
