@@ -32,12 +32,16 @@ jobs:
           node-version: 20.15.0
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm instll
+      - name: Build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./build
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
