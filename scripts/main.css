@@ -1,0 +1,20 @@
+.participants {
+  font-size: 20px;
+}
+
+.participant .expandable {
+  max-block-size: 200px;
+}
+
+.participant .expandable.expanded {
+  max-block-size: none;
+}
+
+.participant .name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-block: 10px;
+}
+
+
+
