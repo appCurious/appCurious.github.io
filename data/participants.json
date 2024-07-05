@@ -2,10 +2,12 @@
   "participants": [
     {
       "name": "Greg Clark",
+      "developerKey": "gregclark",
+      "profileImage": "profile.jpeg",
       "jobTitle": "Senior Software Engineer",
       "technologies": [
         "Vanilla JS",
-        "Snabby - Snabdom Wrapper",
+        "Snabby - Snabbdom Wrapper",
         "HTML",
         "Custom HTML Elements",
         "ShadowDOM",

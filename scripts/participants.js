@@ -1,4 +1,5 @@
 import html from "snabby";
+import './components/curious-expandable.js';
 
 const init = (options) => {
     // whatever the module needs track UI state
@@ -25,14 +26,15 @@ const view = (model, update) => {
 const expandDetail = (model, update, isExpanded) => {
     console.log('model ', model, isExpanded)
     model[isExpanded] = !model[isExpanded];
-    console.log('i clicked you ', model)
     update();
 };
 
 const viewParticipants = (model, update) => {
     return model.participants.map((participant) => {
+        const hero = html`<img class="hero" src="data/${participant.developerKey}/${participant.profileImage}" />`;
 
         return html`<section class="participant">
+            ${hero}
             <div class="name">${participant.name}</div>
             <div class="expandable about">${participant.aboutMe}</div>
             <div class="expandable interests" style="height: 20px; width: 100%;"
@@ -40,6 +42,10 @@ const viewParticipants = (model, update) => {
                 @on:click=${() => expandDetail(model, update, 'hasExpandedInterests')}>
 
             </div>
+            <curious-expandable>
+                <div>${participant.technologies?.join(' * ')}</div>
+            </curious-expandable>
+           
         </section>`;
     });
 }

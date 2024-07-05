@@ -1,5 +1,8 @@
+// resources
 import html         from  'snabby';
 import { toVNode }  from 'snabbdom';
+
+// app views
 import participants from './participants';
 
 async function main () {
@@ -19,6 +22,7 @@ async function main () {
 
     const _update = () => {
         const newNode = html`<div id="app" @key=app>
+            <div class="header-bar"></div>
             <div class="content" @key=content>
                 <h1>App Curious Developers</h1>
                 ${participants.view(uiModel.participants, _update)}
@@ -26,12 +30,7 @@ async function main () {
         </div>`
         _currentNode = html.update(_currentNode, newNode);
     };
-    // _update(html`<div id="app" @key=app>
-    //     <div class="content" @key=content>
-    //         <h1>App Curious Developers</h1>
-    //         ${participants.view(uiModel.participants, _update)}
-    //     </div>
-    // </div>`);
+
     _update();
 }
 
