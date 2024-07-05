@@ -1,3 +1,12 @@
+#app {
+  min-inline-size: 230px;
+}
+
+.header-bar {
+  block-size: 50px;
+  background-color: #dc143c;
+}
+
 .participants {
   font-size: 20px;
 }
@@ -8,6 +17,11 @@
 
 .participant .expandable.expanded {
   max-block-size: none;
+}
+
+.participant img.hero {
+  inline-size: 200px;
+  block-size: 200px;
 }
 
 .participant .name {
